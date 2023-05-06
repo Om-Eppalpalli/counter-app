@@ -1,0 +1,54 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: black;
+}
+
+#container {
+    background-color: bisque;
+    height: 420px;
+    margin-left: 228px;
+    margin-right: 228px;
+    display: flex;
+    justify-content: center;
+}
+
+#counter {
+    text-align: center;
+    font-size: 500%;
+    font-weight: bolder;
+    color: #333;
+}
+
+#increment,
+#reset,
+#decrement {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #4caf50;
+    /* Change button color */
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#increment:hover,
+#reset:hover,
+#decrement:hover {
+    cursor: pointer;
+    background-color: #3e8e41;
+}
+
+#increment:active,
+#reset:active,
+#decrement:active {
+    transform: translateY(2px);
+    /* Move the button down 2 pixels when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    /* Add a shadow effect */
+}
